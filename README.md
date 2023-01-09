@@ -11,6 +11,8 @@ template to create custom gnome based images.
 Flatpaks have been tested to install and run (chromium, mpv, kodi, obs studio, spotify,
 gnome-extention-manager,steam)
 
+![Screenshot](https://github.com/MarkusVolk/meta-gnome-image/blob/master/Screenshot.jpg?raw=true)
+
 To have hardware accelerated video decode available in e.g. the kodi flatpak you would
 need to allow commercial licenses in local.conf.
 
