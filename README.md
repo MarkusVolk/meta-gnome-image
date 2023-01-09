@@ -16,7 +16,6 @@ need to allow commercial licenses in local.conf.
 
 ```
   LICENSE_FLAGS_ACCEPTED = "commercial"
-
 ```
 By default the following users are added:
 
@@ -60,7 +59,6 @@ Currently it depends on the following layers:
   meta-openembedded/meta-gnome
   meta-openembedded/meta-python
   meta-openembedded/meta-filesystems
-  meta-gnome-image
 ```
   
 Depending on your machine eventually additional machine specific layers are reuqired.
