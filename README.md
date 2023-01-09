@@ -5,11 +5,11 @@ It aims to support the basic features and includes only some useful tools but ca
 be expanded by flatpak/gnome-software.
 
 This was created mainly to have a platform to do runtime tests on the yocto/oe gnome
-infrastructure but it is in a quite useable state already, so it may also be used as a
+infrastructure but it is already in a quite useable state, so it may also be used as a
 template to create custom gnome based images.
 
 Flatpaks have been tested to install and run (chromium, mpv, kodi, obs studio, spotify,
-gnome-extention-manager,steam)
+gnome-extension-manager,steam)
 
 ![Screenshot](https://github.com/MarkusVolk/meta-gnome-image/blob/master/Screenshot.jpg?raw=true)
 
@@ -32,7 +32,7 @@ By default the following users are added:
 Those can be overriden by setting your desired user and passwords in local.conf.
 
  ```
- MAIN_USER_NAME = "wanted_username"
+  MAIN_USER_NAME = "wanted_username"
 ```
 
 Set your passwords like this:
@@ -62,7 +62,7 @@ Currently it depends on the following layers:
   meta-openembedded/meta-python
   meta-openembedded/meta-filesystems
 ```
-  
+
 Depending on your machine eventually additional machine specific layers are reuqired.
 In my case also this was included:
 
