@@ -1,0 +1,1 @@
+PACKAGECONFIG += "screenshot screencast background"
