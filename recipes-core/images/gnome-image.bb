@@ -10,7 +10,6 @@ WGTK_APPS ?= " \
 	geary \
 	gnome-calculator \
 	gnome-calendar \
-	gnome-chess \
 	gnome-disk-utility \
 	gnome-online-accounts \
 	gnome-photos \
@@ -47,7 +46,6 @@ WCONSOLE_TOOLS ?= " \
 	imagemagick \
 	iputils \
 	less \
-	libswscale \
 	libusb1 \
 	nano \
 	procps \
