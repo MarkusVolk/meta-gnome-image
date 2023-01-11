@@ -81,11 +81,13 @@ WSYSTEM_CONF ?= " \
 	gstreamer1.0-vaapi \
 	linux-firmware \
 	localedef \
+	nfs-export-public \
 	packagegroup-fonts-truetype \
 	pulseaudio-user-service \
 	resize-helper \
 	shared-mime-info \
 	shared-mime-info-data \
+	steam-udev-rules \
 	system-config \
 	tzdata \
 	tzdata-europe \
