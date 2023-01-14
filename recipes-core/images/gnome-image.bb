@@ -7,12 +7,12 @@ inherit core-image main-user
 WGTK_APPS ?= " \
 	evince \
 	file-roller \
+	gdm \
 	geary \
 	gnome-calculator \
 	gnome-calendar \
 	gnome-disk-utility \
 	gnome-online-accounts \
-	gnome-photos \
 	gnome-screenshot \
 	gnome-shell \	
 	gnome-software \
@@ -89,6 +89,7 @@ WSYSTEM_CONF ?= " \
 	shared-mime-info-data \
 	steam-udev-rules \
 	system-config \
+	system-config-flathub \
 	tzdata \
 	tzdata-europe \
 	udev-rules-udisks-hide-bootpart \
