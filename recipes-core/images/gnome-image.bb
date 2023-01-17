@@ -13,7 +13,6 @@ WGTK_APPS ?= " \
 	gnome-calendar \
 	gnome-disk-utility \
 	gnome-online-accounts \
-	gnome-screenshot \
 	gnome-shell \	
 	gnome-software \
 	gnome-system-monitor \
@@ -25,7 +24,6 @@ WGTK_APPS ?= " \
 	gvfsd-trash \
 	librsvg-gtk \
 	nautilus \
-	pavucontrol \
 "
 
 WCONSOLE_TOOLS ?= " \
@@ -61,6 +59,7 @@ WCONSOLE_TOOLS ?= " \
 	util-linux-agetty \
 	util-linux-fstrim \
 	which \
+	xprop \
 	xz \
 "
 
@@ -93,6 +92,7 @@ WSYSTEM_CONF ?= " \
 	tzdata \
 	tzdata-europe \
 	udev-rules-udisks-hide-bootpart \
+	webp-pixbuf-loader \
 	wireless-regdb-static \
 	xdg-user-dirs \
 	xdg-desktop-portal \
