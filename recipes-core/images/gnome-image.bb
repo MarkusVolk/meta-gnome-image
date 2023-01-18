@@ -79,6 +79,7 @@ WSYSTEM_CONF ?= " \
 	gstreamer1.0-plugins-good \
 	gstreamer1.0-python \
 	gstreamer1.0-vaapi \
+	libcanberra-pulse \
 	linux-firmware \
 	localedef \
 	nfs-export-public \
@@ -87,6 +88,7 @@ WSYSTEM_CONF ?= " \
 	resize-helper \
 	shared-mime-info \
 	shared-mime-info-data \
+	sound-theme-freedesktop \
 	steam-udev-rules \
 	system-config \
 	system-config-flathub \
