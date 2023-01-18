@@ -12,6 +12,7 @@ WGTK_APPS ?= " \
 	gnome-calculator \
 	gnome-calendar \
 	gnome-disk-utility \
+	gnome-menus \
 	gnome-online-accounts \
 	gnome-shell \	
 	gnome-software \
