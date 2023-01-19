@@ -8,14 +8,16 @@ SRC_URI = " \
 	file://bash_profile \
 	file://flathub.sh \
 	file://flathub.service \
+	file://system-auth \
 "
 
 do_install() {
-	install -d ${D}${systemd_system_unitdir} -d ${D}${bindir} ${D}${MAIN_USER_HOMEDIR}
+	install -d ${D}${systemd_system_unitdir} ${D}${bindir} ${D}${MAIN_USER_HOMEDIR} ${D}${sysconfdir}/pam.d
 	install -m 0644 ${WORKDIR}/flathub.service ${D}${systemd_system_unitdir}
 	install -m 0755 ${WORKDIR}/flathub.sh ${D}${bindir}/flathub.sh
 	install -m 0644 ${WORKDIR}/bash_profile ${D}${MAIN_USER_HOMEDIR}/.bash_profile
 	install -m 0644 ${WORKDIR}/bashrc ${D}${MAIN_USER_HOMEDIR}/.bashrc
+	install -m 0644 ${WORKDIR}/system-auth ${D}${sysconfdir}/pam.d	
         chown ${MAIN_USER_NAME}:${MAIN_USER_NAME} -R ${D}${MAIN_USER_HOMEDIR}
 }
 
@@ -25,7 +27,7 @@ SYSTEMD_AUTO_ENABLE:${PN}-flathub = "enable"
 
 PACKAGES += "${PN}-flathub"
 
-FILES:${PN} = "${MAIN_USER_HOMEDIR}"
+FILES:${PN} = "${MAIN_USER_HOMEDIR} ${sysconfdir}"
 FILES:${PN}-flathub = "${bindir}/flathub.sh ${systemd_system_unitdir}/flathub.service"
 
 INSANE_SKIP:${PN} = "host-user-contaminated"
