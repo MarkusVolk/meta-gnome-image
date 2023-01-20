@@ -61,6 +61,7 @@ Currently it depends on the following layers:
   meta-openembedded/meta-gnome
   meta-openembedded/meta-python
   meta-openembedded/meta-filesystems
+  meta-security/meta-tpm
 ```
 
 Depending on your machine eventually additional machine specific layers are reuqired.

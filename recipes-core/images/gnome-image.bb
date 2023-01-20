@@ -14,12 +14,14 @@ WGTK_APPS ?= " \
 	gnome-disk-utility \
 	gnome-menus \
 	gnome-online-accounts \
+	gnome-remote-desktop \
 	gnome-shell \	
 	gnome-software \
 	gnome-system-monitor \
 	gnome-terminal \
 	gnome-text-editor \
 	gsettings-desktop-schemas \
+	gparted \
 	eog \
 	gvfs \
 	gvfsd-trash \
