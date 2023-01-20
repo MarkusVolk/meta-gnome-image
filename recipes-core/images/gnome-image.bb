@@ -8,10 +8,10 @@ WGTK_APPS ?= " \
 	evince \
 	file-roller \
 	gdm \
-	geary \
 	gnome-calculator \
 	gnome-calendar \
 	gnome-disk-utility \
+	gnome-keyring \
 	gnome-menus \
 	gnome-online-accounts \
 	gnome-remote-desktop \
