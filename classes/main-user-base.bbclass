@@ -1,5 +1,5 @@
 MAIN_USER_ID ?= "1000"
-MAIN_USER_GROUPS ?= "audio,dialout,disk,i2c,input,netdev,plugdev,shutdown,sudo,tty,users,video,wheel"
+MAIN_USER_GROUPS ?= "audio,dialout,disk,i2c,input,netdev,plugdev,shutdown,sudo,tty,users,video,wheel,lpadmin,lp"
 MAIN_USER_NAME ??= "user"
 MAIN_USER_PASSWORD ??= "user"
 MAIN_USER_PASSWORD_ENCRYPTED ??= "$(openssl passwd -5 ${MAIN_USER_PASSWORD})"
