@@ -68,6 +68,8 @@ WCONSOLE_TOOLS ?= " \
 
 WSYSTEM_CONF ?= " \
 	ca-certificates \
+	cups-filters \
+	cups-pk-helper \
 	glibc-binary-localedata-cs-cz \
 	glibc-binary-localedata-de-de \
 	glibc-binary-localedata-en-us \
@@ -81,6 +83,8 @@ WSYSTEM_CONF ?= " \
 	gstreamer1.0-plugins-good \
 	gstreamer1.0-python \
 	gstreamer1.0-vaapi \
+	gtk4-printbackend-cups \
+	gtk4-printbackend-file \
 	libcanberra-pulse \
 	linux-firmware \
 	localedef \
@@ -106,12 +110,22 @@ WSYSTEM_CONF ?= " \
 	xorg-minimal-fonts \
 	xwayland \	
 "
-	
+
 WSERVICES ?= " \
 	autofs \
+	avahi-utils \
 	cifs-utils \
+	cups \
+	cups-lib \
+	cups-libimage \
 	fuse3 \
 	fuse3-utils \
+	libavahi-libevent \
+	libavahi-common \
+	libavahi-core \
+	libavahi-client \
+	libavahi-glib \
+	libavahi-gobject \
 	networkmanager \
 	networkmanager-wifi \
 	nfs-utils \
