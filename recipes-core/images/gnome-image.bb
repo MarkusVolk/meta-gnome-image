@@ -98,6 +98,7 @@ WSYSTEM_CONF ?= " \
 	steam-udev-rules \
 	system-config \
 	system-config-flathub \
+	systemd-extra-utils \
 	tzdata \
 	tzdata-europe \
 	udev-rules-udisks-hide-bootpart \
@@ -105,7 +106,6 @@ WSYSTEM_CONF ?= " \
 	wireless-regdb-static \
 	xdg-user-dirs \
 	xdg-desktop-portal \
-	xdg-desktop-portal-gnome \
 	xkeyboard-config \
 	xorg-minimal-fonts \
 	xwayland \	
@@ -120,6 +120,7 @@ WSERVICES ?= " \
 	cups-libimage \
 	fuse3 \
 	fuse3-utils \
+	geoclue \
 	libavahi-libevent \
 	libavahi-common \
 	libavahi-core \
@@ -133,7 +134,9 @@ WSERVICES ?= " \
 	ntpdate \
 	pipewire \
 	rpcbind \
+	rtkit \
 	samba \
+	upower \
 "
 
 WCOMMERCIAL ?= " \
