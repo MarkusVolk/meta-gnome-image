@@ -131,7 +131,6 @@ WSERVICES ?= " \
 	networkmanager-wifi \
 	nfs-utils \
 	nfs-utils-client \
-	ntpdate \
 	pipewire \
 	rpcbind \
 	rtkit \
