@@ -5,6 +5,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/BSD-2-Clause;md5=0835ade698e0bc
 inherit core-image main-user
 
 WGTK_APPS ?= " \
+	blackbox \
 	evince \
 	file-roller \
 	gdm \
@@ -18,7 +19,6 @@ WGTK_APPS ?= " \
 	gnome-shell \	
 	gnome-software \
 	gnome-system-monitor \
-	gnome-terminal \
 	gnome-text-editor \
 	gsettings-desktop-schemas \
 	gparted \
