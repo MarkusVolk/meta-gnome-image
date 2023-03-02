@@ -27,6 +27,7 @@ WGTK_APPS ?= " \
 	gvfsd-trash \
 	librsvg-gtk \
 	nautilus \
+	nwg-look \
 "
 
 WCONSOLE_TOOLS ?= " \
@@ -67,17 +68,11 @@ WCONSOLE_TOOLS ?= " \
 "
 
 WSYSTEM_CONF ?= " \
+	adw-gtk3 \
 	ca-certificates \
+	capitaine-cursors \
 	cups-filters \
 	cups-pk-helper \
-	glibc-binary-localedata-cs-cz \
-	glibc-binary-localedata-de-de \
-	glibc-binary-localedata-en-us \
-	glibc-binary-localedata-es-es \
-	glibc-binary-localedata-fr-fr \
-	glibc-binary-localedata-pl-pl \
-	glibc-binary-localedata-ru-ru \
-	glibc-charmap-utf-8 \
 	gstreamer1.0-meta-base \
 	gstreamer1.0-plugins-base \
 	gstreamer1.0-plugins-good \
@@ -87,7 +82,6 @@ WSYSTEM_CONF ?= " \
 	gtk4-printbackend-file \
 	libcanberra-pulse \
 	linux-firmware \
-	localedef \
 	nfs-export-public \
 	packagegroup-fonts-truetype \
 	pulseaudio-user-service \
@@ -99,13 +93,14 @@ WSYSTEM_CONF ?= " \
 	system-config \
 	system-config-flathub \
 	systemd-extra-utils \
+	tela-circle-icon-theme \
 	tzdata \
 	tzdata-europe \
 	udev-rules-udisks-hide-bootpart \
 	webp-pixbuf-loader \
 	wireless-regdb-static \
-	xdg-user-dirs \
 	xdg-desktop-portal \
+	xdg-user-dirs \
 	xkeyboard-config \
 	xorg-minimal-fonts \
 	xwayland \	
@@ -144,10 +139,23 @@ WCOMMERCIAL ?= " \
 	ffmpeg \
 "
 
+WGLIBC ?= " \
+	glibc-binary-localedata-cs-cz \
+	glibc-binary-localedata-de-de \
+	glibc-binary-localedata-en-us \
+	glibc-binary-localedata-es-es \
+	glibc-binary-localedata-fr-fr \
+	glibc-binary-localedata-pl-pl \
+	glibc-binary-localedata-ru-ru \
+	glibc-charmap-utf-8 \
+	localedef \
+"
+
 IMAGE_INSTALL += " \
 	${WGTK_APPS} \
 	${WCONSOLE_TOOLS} \
 	${WSYSTEM_CONF} \
 	${WSERVICES} \
+	${@bb.utils.contains('TCLIBC', 'glibc', '${WGLIBC}', '', d)} \
 	${@bb.utils.contains('LICENSE_FLAGS_ACCEPTED', 'commercial', '${WCOMMERCIAL}', '', d)} \
 "
