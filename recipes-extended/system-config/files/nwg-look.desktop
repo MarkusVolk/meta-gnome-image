@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=nwg-look
+GenericName=nwg-look
+Comment=Restore gtk 2/3 settings
+Exec=/usr/bin/nwg-look -a
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
