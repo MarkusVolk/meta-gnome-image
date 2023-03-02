@@ -62,6 +62,8 @@ Currently it depends on the following layers:
   meta-openembedded/meta-python
   meta-openembedded/meta-filesystems
   meta-security/meta-tpm
+  meta-kodi
+  meta-wayland
 ```
 
 Depending on your machine eventually additional machine specific layers are reuqired.
