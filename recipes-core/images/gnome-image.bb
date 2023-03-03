@@ -91,7 +91,6 @@ WSYSTEM_CONF ?= " \
 	sound-theme-freedesktop \
 	steam-udev-rules \
 	system-config \
-	system-config-flathub \
 	systemd-extra-utils \
 	tela-circle-icon-theme \
 	tzdata \
