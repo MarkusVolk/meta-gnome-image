@@ -14,28 +14,25 @@ SRC_URI = " \
 "
 
 do_install() {
-	install -d ${D}${systemd_system_unitdir} ${D}${bindir} ${D}${sysconfdir}/pam.d
+	install -d ${D}${systemd_user_unitdir} ${D}${bindir} ${D}${sysconfdir}/pam.d
+	install -d ${D}${MAIN_USER_DEFAULT_TARGET_WANTS}
 	install -d ${D}${MAIN_USER_HOMEDIR}/.config/autostart
 	install -d ${D}${MAIN_USER_HOMEDIR}/.icons/default
 	install -d ${D}${MAIN_USER_HOMEDIR}/.local/share/nwg-look
-	install -m 0644 ${WORKDIR}/flathub.service ${D}${systemd_system_unitdir}
+	install -m 0644 ${WORKDIR}/flathub.service ${D}${systemd_user_unitdir}
 	install -m 0755 ${WORKDIR}/flathub.sh ${D}${bindir}/flathub.sh
 	install -m 0644 ${WORKDIR}/bash_profile ${D}${MAIN_USER_HOMEDIR}/.bash_profile
 	install -m 0644 ${WORKDIR}/bashrc ${D}${MAIN_USER_HOMEDIR}/.bashrc
 	install -m 0644 ${WORKDIR}/system-auth ${D}${sysconfdir}/pam.d
 	install -m 0644 ${WORKDIR}/gsettings ${D}${MAIN_USER_HOMEDIR}/.local/share/nwg-look
 	install -m 0644 ${WORKDIR}/nwg-look.desktop ${D}${MAIN_USER_HOMEDIR}/.config/autostart
+	ln -fs ${systemd_user_unitdir}/flathub.service ${D}${MAIN_USER_DEFAULT_TARGET_WANTS}
         chown ${MAIN_USER_NAME}:${MAIN_USER_NAME} -R ${D}${MAIN_USER_HOMEDIR}
 }
 
-SYSTEMD_PACKAGES = "${PN}-flathub"
-SYSTEMD_SERVICE:${PN}-flathub = "flathub.service"
-SYSTEMD_AUTO_ENABLE:${PN}-flathub = "enable"
-
-PACKAGES += "${PN}-flathub"
-
-FILES:${PN} = "${MAIN_USER_HOMEDIR} ${sysconfdir}"
-FILES:${PN}-flathub = "${bindir}/flathub.sh ${systemd_system_unitdir}/flathub.service"
-
-INSANE_SKIP:${PN} = "host-user-contaminated"
-
+FILES:${PN} = " \
+	${MAIN_USER_HOMEDIR} \
+	${sysconfdir} \
+	${bindir}/flathub.sh \
+	${systemd_user_unitdir} \
+"
