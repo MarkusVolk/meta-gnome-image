@@ -7,8 +7,8 @@ SRC_URI = " \
 	file://0001-install.sh-dont-rename-themes-using-spaces.patch \
 "
 
-PV = "2022-11-12"
-SRCREV = "de2b1bdbbb68ed858a65c014756bf1b9f01bd87c"
+PV = "2023-03-03"
+SRCREV = "513bbdc91f439b6af8f005d9d6b1026bc05577d6"
 S = "${WORKDIR}/git"
 
 inherit gtk-icon-cache
@@ -29,7 +29,7 @@ inherit gtk-icon-cache
 #  yellow                   Yellow color folder version
 #  manjaro                  Manjaro default color folder version
 #  ubuntu                   Ubuntu default color folder version
-#  nord                     nord color folder version
+#  dracula                  Dracula color folder version
 #
 # Add one or more entries seperated by spaces
 TELA_COLOR_VARIANT ?= "blue"
