@@ -8,7 +8,7 @@ inherit gnomebase gettext gsettings features_check
 
 REQUIRED_DISTRO_FEATURES = "opengl"
 
-SRC_URI[archive.sha256sum] = "11d451d1fde44f1809ebf61aff4bea5f9ef4fdc02359a89647f6e9e7d45429ac"
+SRC_URI[archive.sha256sum] = "f7e5088c18fdb08690ae034bf76a1aead59a7dcd17b26e1f7c9975480510a0fd"
 
 DEPENDS = " \
     asciidoc-native \
