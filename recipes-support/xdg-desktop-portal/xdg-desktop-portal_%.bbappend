@@ -1,1 +1,1 @@
-PORTAL_BACKENDS ?= "xdg-desktop-portal-gtk xdg-desktop-portal-gnome"
+PORTAL_BACKENDS:append = " xdg-desktop-portal-gtk xdg-desktop-portal-gnome"
