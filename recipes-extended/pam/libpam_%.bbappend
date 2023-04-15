@@ -9,4 +9,5 @@ do_install:append() {
 	echo "XDG_SESSION_CLASS=user" >> ${D}${sysconfdir}/environment
 	echo "XDG_SESSION_TYPE=wayland" >> ${D}${sysconfdir}/environment
 	echo "XKB_DEFAULT_LAYOUT=en" >> ${D}${sysconfdir}/environment
+	echo "GTK_THEME=adw-gtk3-dark" >> ${D}${sysconfdir}/environment
 }
