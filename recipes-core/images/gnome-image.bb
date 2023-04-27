@@ -73,6 +73,7 @@ WSYSTEM_CONF ?= " \
 	capitaine-cursors \
 	cups-filters \
 	cups-pk-helper \
+	exfatprogs \
 	gstreamer1.0-meta-base \
 	gstreamer1.0-plugins-base \
 	gstreamer1.0-plugins-good \
