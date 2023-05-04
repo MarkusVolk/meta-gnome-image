@@ -64,6 +64,8 @@ Currently it depends on the following layers:
   meta-security/meta-tpm
   meta-kodi
   meta-wayland
+  meta-image
+  meta-gnome-image
 ```
 
 Depending on your machine eventually additional machine specific layers are reuqired.

@@ -1,1 +1,1 @@
-PACKAGECONFIG += "screenshot screencast background"
+PACKAGECONFIG:append = " screenshot screencast background"

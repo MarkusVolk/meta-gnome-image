@@ -52,6 +52,7 @@ WCONSOLE_TOOLS ?= " \
 	nano \
 	procps \
 	psmisc \
+	ntp-utils \
 	pv \
 	rsync \
 	sed \
@@ -85,7 +86,6 @@ WSYSTEM_CONF ?= " \
 	linux-firmware \
 	nfs-export-public \
 	packagegroup-fonts-truetype \
-	pulseaudio-user-service \
 	resize-helper \
 	shared-mime-info \
 	shared-mime-info-data \
@@ -127,6 +127,7 @@ WSERVICES ?= " \
 	nfs-utils \
 	nfs-utils-client \
 	pipewire \
+	pulseaudio-user-service \
 	rpcbind \
 	rtkit \
 	samba \
