@@ -30,9 +30,10 @@ do_install() {
         chown ${MAIN_USER_NAME}:${MAIN_USER_NAME} -R ${D}${MAIN_USER_HOMEDIR}
 }
 
+PACKAGES += "${PN}-flathub"
+FILES:${PN}-flathub = "${bindir}/flathub.sh ${systemd_user_unitdir}/flathub.service"
+
 FILES:${PN} = " \
 	${MAIN_USER_HOMEDIR} \
 	${sysconfdir} \
-	${bindir}/flathub.sh \
-	${systemd_user_unitdir} \
 "

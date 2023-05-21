@@ -1,1 +1,1 @@
-PACKAGECONFIG:append:class-target = " cloudproviders tracker"
+PACKAGECONFIG:append:class-target = " cloudproviders tracker3"
