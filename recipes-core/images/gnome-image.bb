@@ -9,7 +9,7 @@ require recipes-core/images/image.inc
 WWINDOW_MANAGER ?= "gnome-shell"
 
 WGUI_APPS:append = " \
-	blackbox \
+	gnome-terminal \
 	gdm \
 	gnome-menus \
 	gnome-remote-desktop \
