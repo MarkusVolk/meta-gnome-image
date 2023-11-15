@@ -19,14 +19,15 @@ DEPENDS = " \
     vte \
 "
 
-inherit meson gobject-introspection gettext pkgconfig vala features_check
+inherit meson gobject-introspection pkgconfig vala features_check
 
 REQUIRED_DISTRO_FEATURES = "opengl"
 
 SRC_URI = "git://gitlab.gnome.org/raggesilver/blackbox.git;protocol=https;branch=main"
-SRCREV = "401e22fe9b74e61a06c5ad7ae9c7dd148e0f0a98"
+SRCREV = "fa513a2408a989bf716d588bac28374dcab2937a"
 S = "${WORKDIR}/git"
 
+VALA_MESON_OPTION = ''
 GIR_MESON_OPTION = ''
 
 FILES:${PN} += "${datadir}"

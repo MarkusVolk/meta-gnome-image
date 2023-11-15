@@ -9,8 +9,9 @@ inherit meson gobject-introspection vala pkgconfig features_check
 
 REQUIRED_DISTRO_FEATURES = "opengl"
 
-SRC_URI = "git://gitlab.gnome.org/raggesilver/marble.git;protocol=https;branch=wip/gtk4"
-SRCREV = "6dcc6fefa35f0151b0549c01bd774750fe6bdef8"
+SRC_URI = "git://gitlab.gnome.org/raggesilver/marble.git;protocol=https;branch=master"
+SRCREV = "f240b2ec7d5cdacb8fdcc553703420dc5101ffdb"
 S = "${WORKDIR}/git"
 
 GIR_MESON_OPTION = ''
+VALA_MESON_OPTION = ''
