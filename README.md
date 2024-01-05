@@ -1,3 +1,5 @@
+The repository has been moved to https://codeberg.org/flk
+
 # meta-gnome-image
 
 This layer adds configuration to build a basic desktop image based on gnome-shell.
